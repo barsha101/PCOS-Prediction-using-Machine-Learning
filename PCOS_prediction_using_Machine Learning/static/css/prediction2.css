@@ -1,0 +1,19 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background-image: url(https://media.istockphoto.com/id/1211550427/photo/concept-polycystic-ovary-syndrome-pcos-women-reproductive-system.jpg?s=612x612&w=0&k=20&c=ywUK5BJUEhJhRKEXnYY_x3JqIQbcXtdfl93F8ymhaRs=);
+background-size: cover;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+.container{
+    background-color: aqua;
+}

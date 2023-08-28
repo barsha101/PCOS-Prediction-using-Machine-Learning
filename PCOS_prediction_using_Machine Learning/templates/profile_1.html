@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--For responsive		-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Euthalia Webapp</title>
+
+    <!--Owl Carousel	-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+
+    <!--Bootstra CSS	-->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/bootstrap.min.css')}}"
+      type="text/css"
+    />
+
+    <!--Custom Style CSS	-->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/style.css')}}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/profile.css')}}"
+      type="text/css"
+    />
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  </head>
+
+  <body>
+    <!--Start Header	-->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <h1 style="color: white">EUTHALIA</h1>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#home-section"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-section">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#prediction-section">Prediction</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#services-section">Our Doctors</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog-section">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#booking-section"
+                    >Book Appointment</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="left">
+        <img
+          src="https://max-website20-images.s3.ap-south-1.amazonaws.com/Dr_Manju_Khemani_ddfe872b17.jpg"
+          alt="user"
+          width="100"
+        />
+        <h4>Dr. Manju Khemani</h4>
+        <p>Gynaecologist and Obstetrician</p>
+        <p>
+          Dr. Manju Khemani is a Laparoscopic Surgeon (Obs & Gyn),Infertility
+          Specialist and Obstetrician in Saket, Delhi and has an experience of
+          45 years in these fields. Dr. Manju Khemani practices at Max Smart
+          Superspeciality Hospital in Saket, Delhi. She completed MBBS from
+          Gandhi Medical College, Bhopal in 1978 and MD - Obstetrics &
+          Gynaecology from Gandhi Medical College, Bhopal in 1981. She is a
+          member of Delhi Medical Council and Medical Council of India (MCI).
+        </p>
+      </div>
+      <div class="right">
+        <div class="info">
+          <h3>Information</h3>
+          <div class="info_data">
+            <div class="data">
+              <h4>Choose the type of appointment</h4>
+               
+              <input type="radio" id="html" name="fav_language" value="HTML" />
+                <label for="html">Clinic Visit</label><br />
+               
+              <input type="radio" id="css" name="fav_language" value="CSS" />  
+              <label for="css">Video Consult</label>
+               
+            </div>
+          </div>
+        </div>
+
+        <div class="projects">
+          <h3>Other information</h3>
+          <div class="projects_data">
+            <div class="data">
+              <h4>Fees</h4>
+              <p>Clinic Fees: Rs 1500</p>
+              <p>Video Consultation: Rs 1500</p>
+            </div>
+            <div class="data">
+              <h4>Schedule Appointement</h4>
+              <a href="/calender">Click to schedule your appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="social_media">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/dr-manju-khemani-28020b45/">
+                <i class="fab fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

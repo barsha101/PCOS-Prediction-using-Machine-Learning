@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--For responsive		-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Euthalia Webapp</title>
+
+    <!--Owl Carousel	-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+
+    <!--Bootstra CSS	-->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/bootstrap.min.css')}}"
+      type="text/css"
+    />
+
+    <!--Custom Style CSS	-->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/style.css')}}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/profile.css')}}"
+      type="text/css"
+    />
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  </head>
+
+  <body>
+    <!--Start Header	-->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <h1 style="color: white">EUTHALIA</h1>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#home-section"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-section">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#prediction-section">Prediction</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#services-section">Our Doctors</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog-section">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#booking-section"
+                    >Book Appointment</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="left">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="user"
+          width="100"
+        />
+        <h4>Dr. Rama Joshi</h4>
+        <p>Gynaecologist and Obstetrician</p>
+        <p>
+          Dr.Rama Joshi has 10 years of vast experience in Obstetrics and
+          Gynaecology as well as great experience in the field of PCOS / PCOD,
+          Polycystic Ovarian Syndrome. She is one of the best PCOS Specialist
+          and Infertility Specialist and Best Doctor For PCOS In India.
+        </p>
+      </div>
+      <div class="right">
+        <div class="info">
+          <h3>Information</h3>
+          <div class="info_data">
+            <div class="data">
+              <h4>Email</h4>
+              <p>Joshi.RM02@gmail.com</p>
+            </div>
+            <div class="data">
+              <h4>Choose the type of appointment</h4>
+               
+              <input type="radio" id="html" name="fav_language" value="HTML" />
+                <label for="html">Clinic Visit</label><br />
+               
+              <input type="radio" id="css" name="fav_language" value="CSS" />  
+              <label for="css">Video Consult</label>
+               
+            </div>
+          </div>
+        </div>
+
+        <div class="projects">
+          <h3>Other information</h3>
+          <div class="projects_data">
+            <div class="data">
+              <h4>Fees</h4>
+              <p>Clinic Fees: Rs 1300</p>
+              <p>Video Consultation: Rs 1100</p>
+            </div>
+            <div class="data">
+              <h4>Schedule Appointement</h4>
+              <a href="/calender">Click to schedule your appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

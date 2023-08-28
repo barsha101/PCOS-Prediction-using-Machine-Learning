@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prediction</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="{{url_for('static',filename='css/prediction_updated.css')}}">
+</head>
+<body>
+    <h1><center>PCOS Prediction using ML</center></h1>
+    
+    <form action="/predict" method="post">
+<div class="m-4">
+    <div class="row g-3">
+      <!-- <p>Want to find your BMI?Check out our <a href="bmi.html">BMI Calculator </a>to check your BMI and get results instantly</p> -->
+        <div class="col-2">
+            <input type="number" name="a" class="form-control" placeholder="Weight">
+        </div>
+       
+
+<div class="row g-3">
+  <div class="col-2">
+    <input type="number" name="b" class="form-control" placeholder="Cycle(R/I)">
+</div>
+</div>
+
+<div class="row g-3">
+          <div class="col-2">
+            <input type="number" name="c" class="form-control" placeholder="I beta-HCG(mIU/mL)">
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-2">
+          <input type="number" name="d" class="form-control" placeholder="II beta-HCG(mIU/mL)">
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-2">
+        <input type="number" name="e" class="form-control" placeholder="FSH(mIU/mL)">
+    </div>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-2">
+      <input type="number" name="f" class="form-control" placeholder="LH(mIU/mL)">
+  </div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <input type="number" name="g" class="form-control" placeholder="FSH/LH">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <input type="number" name="h" class="form-control" placeholder="AMH(ng/mL)">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <input type="number" name="i" class="form-control" placeholder="Vit D3 (ng/mL)">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <input type="number" name="j" class="form-control" placeholder="PRG(ng/mL)">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <input type="number" name="k" class="form-control" placeholder="Weight gain">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <input type="number" name="l" class="form-control" placeholder="Hair Growth">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <input type="number" name="m" class="form-control" placeholder="Skin Darkening">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <input type="number" name="n" class="form-control" placeholder="Hair Loss">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <input type="number" name="o" class="form-control" placeholder="Pimples">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <input type="number" name="p" class="form-control" placeholder="Fast Food">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <label for="quantity">Follicle No.(L):</label>
+  <input type="number" name="q" id="quantity" name="quantity" min="0" max="100">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <label for="quantity">Follicle No.(R):</label>
+  <input type="number" name="r" id="quantity" name="quantity" min="0" max="100">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <label for="quantity">Avg.F size(L)(mm):</label>
+  <input type="number" name="s" id="quantity" name="quantity" min="0" max="100">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <label for="quantity">Avg.F size(R)(mm):</label>
+  <input type="number" name="t" id="quantity" name="quantity" min="0" max="100">
+</div>
+</div>
+
+<div class="row g-3">
+  <div class="col-2">
+    <label for="quantity">Endometrium(mm):</label>
+  <input type="number" name="u" id="quantity" name="quantity" min="0" max="100">
+</div>
+</div>
+        <div class="form-check d-flex justify-content-left mb-4">
+            <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+            <label class="form-check-label" for="form4Example4">
+              Send me a copy of this test result
+            </label>
+            </div>
+            <div class="btn d-flex justify-content-left mb-1">
+          <!-- Submit button -->
+          <button class="submit" onclick="alert('Please wait...The result is processing')">PCOS Test Result</button>
+        </div>
+    
+</div>
+</form>
+
+
+
+<script src="prediction.js"></script>
+</body>
+</html>

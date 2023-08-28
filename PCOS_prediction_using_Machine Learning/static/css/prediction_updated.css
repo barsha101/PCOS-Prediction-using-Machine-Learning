@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  background-image: url(https://i.etsystatic.com/18751175/r/il/c329e7/2179029350/il_fullxfull.2179029350_rjcn.jpg);
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  background-size: cover;
+}
+.container {
+  background-color: aqua;
+}

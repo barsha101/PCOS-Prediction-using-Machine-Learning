@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='css/login.css')}}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <img class="wave" src="" />
+    <div class="container">
+      <div class="img">
+        <img
+          src="https://mlytjaouhacv.i.optimole.com/cb:D-Is~57387/w:800/h:800/q:mauto/f:avif/https://pcosrelief.org/wp-content/uploads/pcos-fertility-treatment-uk-2.jpg"
+        />
+      </div>
+      <div class="login-content">
+        <form action="{{ url_for('login') }}" method="post">
+          <img src="" />
+          <h2 class="title">Welcome</h2>
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="div">
+              <input
+                type="text"
+                name="UserName"
+                class="input"
+                placeholder="Username"
+              />
+            </div>
+          </div>
+          <div class="input-div pass">
+            <div class="i">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="div">
+              <input
+                type="password"
+                name="PSW"
+                class="input"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <a href="/Registration">Create an account</a>
+          <input type="submit" class="btn" value="Login" />
+        </form>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="{{url_for('static',filename='js/main.js')}}"
+    ></script>
+  </body>
+</html>

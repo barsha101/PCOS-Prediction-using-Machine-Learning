@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/registration.css')}}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <img class="wave" src="" />
+    <div class="container">
+      <div class="img">
+        <img
+          src="https://www.womanlog.com/getimage?key=969151d9d2c4d410f5543f94c1c95597bff1f14c3cbd2d60c395df0dd62ce301"
+        />
+      </div>
+      <div class="login-content">
+        <form action="{{ url_for('register') }}" method="post">
+          <img src="" />
+          <h2 class="title">Welcome</h2>
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="div">
+              <input type="text" name="Name" class="input" placeholder="Name" />
+            </div>
+          </div>
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="div">
+              <input
+                type="text"
+                name="UserName"
+                class="input"
+                placeholder="username"
+              />
+            </div>
+          </div>
+
+          <div class="input-div pass">
+            <div class="i">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="div">
+              <input
+                type="password"
+                name="PSW"
+                class="input"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="div">
+              <input
+                type="email"
+                name="Email"
+                class="input"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="div">
+              <input
+                type="text"
+                name="Adds"
+                class="input"
+                placeholder="Address"
+              />
+            </div>
+          </div>
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="div">
+              <input type="number" name="Age" class="input" placeholder="Age" />
+            </div>
+          </div>
+
+          <a href="#">Forgot Password?</a>
+          <input type="submit" class="btn" value="Register" />
+        </form>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="{{url_for('static',filename='js/main.js')}}"
+    ></script>
+  </body>
+</html>
